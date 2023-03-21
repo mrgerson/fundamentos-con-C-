@@ -1,0 +1,15 @@
+C:\Users\gcalvo\Documents\C#\fundamentos c#\proyectoEscuela\bin\Debug\net7.0\proyectoEscuela.exe
+C:\Users\gcalvo\Documents\C#\fundamentos c#\proyectoEscuela\bin\Debug\net7.0\proyectoEscuela.deps.json
+C:\Users\gcalvo\Documents\C#\fundamentos c#\proyectoEscuela\bin\Debug\net7.0\proyectoEscuela.runtimeconfig.json
+C:\Users\gcalvo\Documents\C#\fundamentos c#\proyectoEscuela\bin\Debug\net7.0\proyectoEscuela.dll
+C:\Users\gcalvo\Documents\C#\fundamentos c#\proyectoEscuela\bin\Debug\net7.0\proyectoEscuela.pdb
+C:\Users\gcalvo\Documents\C#\fundamentos c#\proyectoEscuela\obj\Debug\net7.0\proyectoEscuela.csproj.AssemblyReference.cache
+C:\Users\gcalvo\Documents\C#\fundamentos c#\proyectoEscuela\obj\Debug\net7.0\proyectoEscuela.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gcalvo\Documents\C#\fundamentos c#\proyectoEscuela\obj\Debug\net7.0\proyectoEscuela.AssemblyInfoInputs.cache
+C:\Users\gcalvo\Documents\C#\fundamentos c#\proyectoEscuela\obj\Debug\net7.0\proyectoEscuela.AssemblyInfo.cs
+C:\Users\gcalvo\Documents\C#\fundamentos c#\proyectoEscuela\obj\Debug\net7.0\proyectoEscuela.csproj.CoreCompileInputs.cache
+C:\Users\gcalvo\Documents\C#\fundamentos c#\proyectoEscuela\obj\Debug\net7.0\proyectoEscuela.dll
+C:\Users\gcalvo\Documents\C#\fundamentos c#\proyectoEscuela\obj\Debug\net7.0\refint\proyectoEscuela.dll
+C:\Users\gcalvo\Documents\C#\fundamentos c#\proyectoEscuela\obj\Debug\net7.0\proyectoEscuela.pdb
+C:\Users\gcalvo\Documents\C#\fundamentos c#\proyectoEscuela\obj\Debug\net7.0\proyectoEscuela.genruntimeconfig.cache
+C:\Users\gcalvo\Documents\C#\fundamentos c#\proyectoEscuela\obj\Debug\net7.0\ref\proyectoEscuela.dll
