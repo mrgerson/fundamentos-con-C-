@@ -14,16 +14,50 @@ namespace Etapa1
                                );
             Console.WriteLine(escuela);
 
-            escuela.Cursos = new Curso[]{
+            /* escuela.Cursos = new Curso[]{
                 new Curso(){ Nombre = "101"},
                 new Curso() {Nombre = "201"},
                 new Curso{Nombre = "301"}
+            }; */
+
+            //agregar elementos a una colección
+            escuela.Cursos = new List<Curso>(){
+                        new Curso(){ Nombre = "101", Jornada = TiposJornada.Mañana },
+                        new Curso() {Nombre = "201", Jornada = TiposJornada.Mañana},
+                        new Curso{Nombre = "301", Jornada = TiposJornada.Mañana}
             };
+
+            //agregar elemento a la colección
+            escuela.Cursos.Add(new Curso { Nombre = "102", Jornada = TiposJornada.Tarde });
+            escuela.Cursos.Add(new Curso { Nombre = "202", Jornada = TiposJornada.Tarde });
+
+            var otrColeccion = new List<Curso>(){
+                        new Curso(){ Nombre = "401", Jornada = TiposJornada.Mañana },
+                        new Curso() {Nombre = "501", Jornada = TiposJornada.Mañana},
+                        new Curso{Nombre = "501", Jornada = TiposJornada.Tarde}
+            };
+
+
+            //agregar elementos a la colección por rango
+            escuela.Cursos.AddRange(otrColeccion);
+
+
+            //eliminar elementos de esta colección todos
+            //otrColeccion.Clear();
+
+            //remover por algun curso
+            escuela.Cursos.RemoveAll(delegate (Curso cur)
+                                    {
+                                        return cur.Nombre == "301";
+                                    });
+
+           //remover cpn lambda
+           escuela.Cursos.RemoveAll((cur)=> cur.Nombre == "501" && cur.Jornada == TiposJornada.Mañana );
 
             ImpimirCursosEscuela(escuela);
 
 
-            
+
 
         }
 
@@ -37,16 +71,16 @@ namespace Etapa1
             {
                 foreach (var curso in escuela.Cursos)
                 {
-                    WriteLine($"Nombre {curso.Nombre  }, Id  {curso.UniqueId}");
+                    WriteLine($"Nombre {curso.Nombre}, Id  {curso.UniqueId}");
                 }
             }
         }
-         private static void ImprimirCursosWhile(Curso[] arregloCursos)
+        private static void ImprimirCursosWhile(Curso[] arregloCursos)
         {
             int contador = 0;
             while (contador < arregloCursos.Length)
             {
-                Console.WriteLine($"Nombre {arregloCursos[contador].Nombre  }, Id  {arregloCursos[contador].UniqueId}");
+                Console.WriteLine($"Nombre {arregloCursos[contador].Nombre}, Id  {arregloCursos[contador].UniqueId}");
                 contador++;
             }
         }
@@ -56,7 +90,7 @@ namespace Etapa1
             int contador = 0;
             do
             {
-                Console.WriteLine($"Nombre {arregloCursos[contador].Nombre  }, Id  {arregloCursos[contador].UniqueId}");
+                Console.WriteLine($"Nombre {arregloCursos[contador].Nombre}, Id  {arregloCursos[contador].UniqueId}");
                 contador++;
             } while (contador < arregloCursos.Length);
         }
@@ -65,7 +99,7 @@ namespace Etapa1
         {
             for (int i = 0; i < arregloCursos.Length; i++)
             {
-                Console.WriteLine($"Nombre {arregloCursos[i].Nombre  }, Id  {arregloCursos[i].UniqueId}");
+                Console.WriteLine($"Nombre {arregloCursos[i].Nombre}, Id  {arregloCursos[i].UniqueId}");
             }
         }
 
@@ -73,7 +107,7 @@ namespace Etapa1
         {
             foreach (var curso in arregloCursos)
             {
-                Console.WriteLine($"Nombre {curso.Nombre  }, Id  {curso.UniqueId}");
+                Console.WriteLine($"Nombre {curso.Nombre}, Id  {curso.UniqueId}");
             }
         }
 
