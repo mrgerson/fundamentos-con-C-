@@ -13,5 +13,13 @@ namespace CoreEscuela.Entidades
         public float Nota { get; set; }
 
         public Evaluaciones() => UniqueId = Guid.NewGuid().ToString();
+
+        public Evaluaciones(string nombre, float calificacion, 
+                       Alumno estudiante, Asignatura materia) 
+        {
+            (Nombre, Nota) = (nombre, calificacion);
+            Alumno = estudiante;
+            Asignatura = materia;
+        }
     }
 }

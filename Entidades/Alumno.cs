@@ -8,5 +8,8 @@ namespace CoreEscuela.Entidades
         public string Nombre { get; set; }
 
         public Alumno() => UniqueId = Guid.NewGuid().ToString();
+
+
+        
     }
 }
